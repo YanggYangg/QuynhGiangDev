@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 };
 
 // const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
-const GA_ID = "G-LYZFK54VCS";
+// const GA_ID = "G-LYZFK54VCS";
 
 export default function RootLayout({
   children,
@@ -35,24 +35,22 @@ export default function RootLayout({
       >
         <Header />
         <AntdRegistry>{children}</AntdRegistry>
-        {GA_ID && (
-          <>
-            <Script
-              src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
-              strategy="afterInteractive"
-            />
-            console.log("test GA_ID:", GA_ID);
-            <Script id="google-analytics" strategy="afterInteractive">
-              {`
+
+        <>
+          <Script
+            src={`https://www.googletagmanager.com/gtag/js?id=G-LYZFK54VCS`}
+            strategy="afterInteractive"
+          />
+          <Script id="google-analytics" strategy="afterInteractive">
+            {`
         window.dataLayer = window.dataLayer || [];
         function gtag(){window.dataLayer.push(arguments);}
         window.gtag = gtag;
         gtag('js', new Date());
-        gtag('config', '${GA_ID}');
+        gtag('config', 'G-LYZFK54VCS');
       `}
-            </Script>
-          </>
-        )}
+          </Script>
+        </>
       </body>
     </html>
   );
