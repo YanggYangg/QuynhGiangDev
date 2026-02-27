@@ -20,7 +20,8 @@ export const metadata: Metadata = {
   description: "My portfolio website",
 };
 
-const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
+// const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
+const GA_ID = "G-LYZFK54VCS";
 
 export default function RootLayout({
   children,
@@ -40,6 +41,7 @@ export default function RootLayout({
               src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
               strategy="afterInteractive"
             />
+            console.log("test GA_ID:", GA_ID);
             <Script id="google-analytics" strategy="afterInteractive">
               {`
         window.dataLayer = window.dataLayer || [];
