@@ -13,8 +13,9 @@ export default function Header() {
       <div className={styles.rightContainer}>
         <nav className={styles.nav}>
           <Link href="/" className={styles.link}>Home</Link>
-          <Link href="/my-projects" className={styles.link}>My projects</Link>
           <Link href="/about-me" className={styles.link}>About me</Link>
+          <Link href="/myexperience_education" className={styles.link}>Experience & Education</Link>
+          <Link href="/my-projects" className={styles.link}>My projects</Link>
           <Link href="/my-contact" className={styles.link}>Contact</Link>
         </nav>
       </div>

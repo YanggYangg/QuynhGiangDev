@@ -1,4 +1,71 @@
-.container{
-    background-color: blanchedalmond;
-    height: 600px;
+.container {
+  padding: 50px;
+  /* background-color: #622ed2; */
+}
+
+.heading {
+  font-size: 36px;
+  font-weight: bold;
+  font-family: "JetBrains Mono", monospace;
+  color: #e6fffa;
+}
+
+/* can cho timeline nam giua */
+:global(.ant-timeline.ant-timeline-alternate) {
+  padding-left: 0 !important;
+}
+
+:global(.ant-timeline) {
+  margin: 0 auto !important;
+}
+
+.timeline {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #0b1f1e;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+}
+
+.card h3 {
+  color: #4ef2c8;
+  font-family: "JetBrains Mono", monospace;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.sub {
+  color: #bff7ea;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.card p {
+  color: #d9f3ee;
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+/* duong line giua */
+:global(.ant-timeline-item-rail) {
+  background-color: #569988 !important;
+  width: 2px !important;
+  /* box-shadow: 0 0 10px #4ef2c8aa; */
+}
+
+:global(.ant-timeline-item-icon) {
+  background-color: #4ef2c8 !important;
+  border-color: #4ef2c8 !important;
+  box-shadow: 0 0 10px #4ef2c8aa;
 }
